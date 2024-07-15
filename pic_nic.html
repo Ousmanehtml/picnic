@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répartition des Groupes</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Bienvenue !</h1>
+    <form id="participantsForm">
+        <p>
+            <label for="nbParticipants">Nombre de participants :</label>
+            <input type="number" id="nbParticipants" required min="1">
+        </p>
+        <p>
+            <input type="submit" value="Suivant">
+        </p>
+    </form>
+    <form id="namesForm" style="display: none;">
+        <h2>Veuillez entrer les noms des participants</h2>
+        <div id="namesContainer"></div>
+        <p>
+            <input type="submit" value="Répartir les groupes">
+        </p>
+        <p>
+            <button id="backButton">Retour</button>
+        </p>
+    </form>
+    <div id="result"></div>
+    <div id="finalActions" style="display: none;">
+        <p>
+            <button id="mainMenuButton">Retour au menu principal</button>
+            <button id="quitButton">Terminé</button>
+        </p>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
